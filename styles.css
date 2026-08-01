@@ -44,6 +44,12 @@ body {
 
 h1, h2, h3, h4 { font-family: var(--display); margin: 0; font-weight: 600; letter-spacing: -0.01em; }
 p { margin: 0 0 1em; }
+
+.section-title {
+  font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+}
+.accent { color: var(--berry); }
+
 a { color: var(--berry); text-decoration: none; }
 a:hover { text-decoration: underline; }
 img { max-width: 100%; display: block; }
@@ -310,6 +316,19 @@ section.block:last-of-type { border-bottom: none; }
 .strength-grid { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 960px) { .strength-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .strength-grid { grid-template-columns: 1fr; } }
+.strength-item { display: flex; flex-direction: column; }
+.strength-domain {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 10px;
+}
+.strength-grid .card {
+  background: var(--paper-dim);
+  flex: 1;
+}
 
 /* ---------------- Card / focus areas ---------------- */
 .card-grid {
@@ -339,6 +358,11 @@ section.block:last-of-type { border-bottom: none; }
   margin-bottom: 14px;
 }
 
+.explore-cards .card {
+  background: var(--berry-tint);
+  border-color: transparent;
+}
+
 /* ---------------- Logic-model flow (signature element) ---------------- */
 .logic-flow {
   display: grid;
@@ -356,6 +380,7 @@ section.block:last-of-type { border-bottom: none; }
   padding: 28px 24px;
   position: relative;
   border-right: 1px solid var(--line);
+  background: var(--teal-tint);
 }
 .logic-flow .logic-stage:last-child { border-right: none; }
 @media (max-width: 860px) {
@@ -369,7 +394,7 @@ section.block:last-of-type { border-bottom: none; }
   top: 32px;
   color: var(--gold);
   font-family: var(--mono);
-  background: var(--paper);
+  background: var(--teal-tint);
   z-index: 2;
 }
 .logic-flow .logic-stage:last-child::after { content: ""; }
