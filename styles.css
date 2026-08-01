@@ -277,7 +277,41 @@ section.block:last-of-type { border-bottom: none; }
 .block-head { max-width: 60ch; margin-bottom: 44px; }
 .block-head h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
 
-/* ---------------- Cards / focus areas ---------------- */
+/* ---------------- Community collage ---------------- */
+.community-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .community-grid { grid-template-columns: 1fr; }
+}
+.community-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.community-photos img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.community-photos img:first-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+.community-photos img:not(:first-child) {
+  aspect-ratio: 1 / 1;
+}
+
+/* ---------------- Strengths grid (4-up) ---------------- */
+.strength-grid { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 960px) { .strength-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .strength-grid { grid-template-columns: 1fr; } }
+
+/* ---------------- Card / focus areas ---------------- */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
