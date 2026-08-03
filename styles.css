@@ -280,6 +280,7 @@ nav.main-nav a[aria-current="page"] {
 /* ---------------- Section shell ---------------- */
 section.block { padding: 72px 0; border-bottom: 1px solid var(--line); }
 section.block:last-of-type { border-bottom: none; }
+.section-dark { background: var(--paper-dim); }
 .block-head { max-width: 60ch; margin-bottom: 44px; }
 .block-head h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
 
