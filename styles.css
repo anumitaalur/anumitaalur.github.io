@@ -308,7 +308,7 @@ section.block:last-of-type { border-bottom: none; }
 .community-photos img:first-child {
   grid-column: 1 / -1;
   aspect-ratio: 16 / 9;
-  object-position: center 20%;
+  object-position: center 65%;
 }
 .community-photos img:not(:first-child) {
   aspect-ratio: 1 / 1;
