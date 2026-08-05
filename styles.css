@@ -575,3 +575,16 @@ a.pub-box h3 { color: var(--berry-dark); }
 }
 .page-hero h1 { font-size: clamp(2.1rem, 4.2vw, 3.2rem); margin-bottom: 14px; }
 .page-hero p { color: var(--ink-soft); max-width: 60ch; }
+
+/* ---------------- Project entries ---------------- */
+.project-block { max-width: 72ch; }
+.project-meta {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-top: 16px;
+  margin-bottom: 18px;
+}
+.project-body { color: var(--ink-soft); font-size: 1rem; }
