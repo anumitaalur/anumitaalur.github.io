@@ -355,6 +355,27 @@ a.pub-box:hover {
 }
 a.pub-box h3 { color: var(--berry-dark); }
 
+/* ---------------- Conference photos ---------------- */
+.conference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+@media (max-width: 720px) { .conference-grid { grid-template-columns: 1fr; } }
+.conference-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+}
+.conference-caption {
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
 /* ---------------- Card / focus areas ---------------- */
 .card-grid {
   display: grid;
