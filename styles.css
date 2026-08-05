@@ -518,12 +518,12 @@ a.pub-box h3 { color: var(--berry-dark); }
 .chip-group h4 { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chip {
-  font-size: 0.85rem;
-  padding: 6px 14px;
-  border: 1px solid var(--line);
+  font-size: 0.95rem;
+  padding: 9px 20px;
+  border: 1px solid var(--teal);
   border-radius: 999px;
-  color: var(--ink-soft);
-  background: var(--paper-dim);
+  color: var(--teal);
+  background: var(--teal-tint);
 }
 
 /* ---------------- Quote ---------------- */
