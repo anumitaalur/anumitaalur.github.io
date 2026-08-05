@@ -342,6 +342,18 @@ section.block:last-of-type { border-bottom: none; }
 .pub-box h3 { font-size: 1.05rem; margin-bottom: 10px; }
 .pub-box .meta { font-family: var(--mono); font-size: 0.8rem; color: var(--teal); margin-bottom: 8px; display: block; }
 .pub-box p { color: var(--ink-soft); font-size: 0.93rem; margin-bottom: 0; }
+a.pub-box {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+a.pub-box:hover {
+  border-color: var(--berry);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+a.pub-box h3 { color: var(--berry-dark); }
 
 /* ---------------- Card / focus areas ---------------- */
 .card-grid {
